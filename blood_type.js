@@ -13,15 +13,14 @@ function canGiveBlood(Donor, Receiver) {
       (Donor == "B-" && ReceiverBMinus.indexOf(Receiver) !== -1) ||
       (Donor == "O+" && ReceiverOPlus.indexOf(Receiver) !== -1) ||
       (Donor == "O-" && ReceiverOMinus.indexOf(Receiver) !== -1) ||
-      (Donor == "AB+" && ReceiverABPlus.indexOf(Receiver) !== -1) ||
-      (Donor == "AB-" && ReceiverABMinus.indexOf(Receiver))) == true) {
+      (Donor == "AB-" && ReceiverABMinus.indexOf(Receiver) !== -1) ||
+      (Donor == "AB+" && ReceiverABPlus.indexOf(Receiver))) == true) {
     console.log("True");
   }
   else {
     console.log("False");
   }
 }
-
 canGiveBlood("O+", "A+");
 canGiveBlood("A-", "B-");
 canGiveBlood("A-", "AB+");
